@@ -1,0 +1,14 @@
+{
+  "name": "tailwandcss",
+  "version": "1.0.0",
+  "description": "this is for learning tailwind ",
+  "main": "index.js",
+  "scripts": {
+"build-css":"npx tailwindcss -i ./src/style/style.css -o ./src/style/output.css --watch"  
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

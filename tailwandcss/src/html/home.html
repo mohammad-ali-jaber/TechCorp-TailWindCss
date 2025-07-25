@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"rel="stylesheet"/>
+  <link href="../style/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-600 text-white">
+
+    <!-- start Navbar -->
+    <nav class="fixed w-full bg-gray-900 flex items-center justify-between px-8 py-4 ">
+      <div class="flex items-center text-white text-lg font-bold px-0 md:px-20">
+        <i class="bi bi-lightning-charge-fill text-yellow-400 text-xl mr-2"></i>TechCorp
+      </div>
+
+      <div class="md:hidden text-white text-2xl cursor-pointer" onclick="toggleMenu()">
+        <i class="bi bi-menu-button-wide"></i>
+      </div>
+
+      <div id="nav-menu" class="hidden absolute top-full left-0 w-full bg-gray-900 md:static md:block md:w-auto">
+        <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-6 p-4 md:p-0">
+          <li><a href="home.html" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+          <li><a href="services.html" class="hover:text-yellow-400">Service</a></li>
+          <li><a href="portfolio.html" class="hover:text-yellow-400">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end Navbar -->
+
+<!-- strat JavaScript for menu-->
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+    }
+</script>
+<!-- end JavaScript for menu-->
+
+    <!-- start Header Section -->
+    <header class="text-center font-bold pt-32 pb-20 px-4">
+        <h1 class="text-4xl md:text-5xl mb-4 text-yellow-400">Welcome to TechCorp</h1>
+        <p class="text-lg mb-6 text-gray-300">Innovative Solutions for a Digital World</p>
+        <a href="services.html" class="bg-yellow-400 hover:bg-blue-300 text-black px-6 py-3 rounded font-bold">
+          Explore Services
+        </a>
+    </header>
+    <!-- end Header Section -->
+
+
+    <!-- start  About Section -->
+    <section class="bg-gray-800 text-center py-16 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-4 text-yellow-400">About Us</h2>
+        <p class="text-gray-300 leading-relaxed mb-6">
+          TechCorp is a leading tech company offering software solutions, cloud systems, and custom web platforms for businesses and individuals around the globe.
+        </p>
+        <a href="about.html" class="bg-yellow-400 hover:bg-blue-300 text-black px-6 py-3 rounded font-bold">
+          See more..
+        </a>
+      </div>
+    </section>
+    <!-- end  About Section -->
+
+
+    <!-- start Features Section -->
+    <section class="text-center py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-12 text-yellow-400">Our Features</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+      
+      <div class="bg-gray-900 text-white p-8 rounded-lg">
+        <i class="bi bi-speedometer2 text-yellow-400 text-4xl mb-4 block"></i>
+        <h3 class="text-xl font-semibold mb-2">Performance</h3>
+        <p>Fast, reliable, and scalable systems tailored to your needs.</p>
+      </div>
+
+      <div class="bg-gray-900 text-white p-8 rounded-lg">
+        <i class="bi bi-shield-lock text-yellow-400 text-4xl mb-4 block"></i>
+        <h3 class="text-xl font-semibold mb-2">Security</h3>
+        <p>Top-notch security protocols to keep your data safe.</p>
+      </div>
+
+      <div class="bg-gray-900 text-white p-8 rounded-lg">
+        <i class="bi bi-people text-yellow-400 text-4xl mb-4 block"></i>
+        <h3 class="text-xl font-semibold mb-2">Support</h3>
+        <p>24/7 support from our friendly expert team.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end Features Section -->
+
+
+    <!--start Ready Section -->
+    <section class="bg-gray-800 text-center py-16 px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-4 text-yellow-400">Ready to get started?</h2>
+        <p class="text-gray-300 mb-6">
+          Join thousands of users who trust TechCorp for their digital solutions.
+        </p>
+        <a href="contact.html" class="bg-yellow-400 hover:bg-blue-300 text-black px-6 py-3 rounded font-bold">
+          Contact Us
+        </a>
+      </div>
+    </section>
+    <!--end  Ready Section -->
+
+
+    <!-- start Footer -->
+<footer class="bg-gray-900 py-20 text-center">
+    <div class="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-gray-600 pb-10 ">
+      <div class="space-y-3 pl-8">
+        <h5 class="text-white font-bold text-xl">TechFlow</h5>
+        <p class="text-gray-400">Building the future with modern technology.</p>
+      </div>
+      <div class="space-y-5">
+        <h5 class="text-white font-bold text-xl">Product</h5>
+        <ul class="text-gray-400 space-y-2">
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>API</li>
+        </ul>
+      </div>
+      <div class="space-y-5">
+        <h5 class="text-white font-bold text-xl">Company</h5>
+        <ul class="text-gray-400 space-y-2">
+          <li>About</li>
+          <li>Careers</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="space-y-5 ">
+        <h5 class="text-white font-bold text-xl">Support</h5>
+        <ul class="text-gray-400 space-y-2">
+          <li>Help Center</li>
+          <li>Documentation</li>
+          <li>Status</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-10 text-center text-gray-400">
+      © 2024 TechFlow. All rights reserved.
+    </div>
+  </footer>
+    <!-- end Footer -->
+
+  </body>
+</html>
